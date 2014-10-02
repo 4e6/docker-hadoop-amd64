@@ -4,7 +4,7 @@ FROM debian:sid
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 RUN echo 'deb http://ftp.us.debian.org/debian/ sid main' > /etc/apt/sources.list
 RUN apt-get -y update
-RUN apt-get -y install build-essential maven cmake zlib1g-dev libssl-dev pkg-config openjdk-7-jdk openjdk-7-jre curl
+RUN apt-get -y install build-essential maven cmake zlib1g-dev libssl-dev pkg-config openjdk-7-jre-headless openjdk-7-jdk curl
 
 # build
 RUN curl -Lk https://protobuf.googlecode.com/svn/rc/protobuf-2.5.0.tar.gz | tar -xz -C /opt
