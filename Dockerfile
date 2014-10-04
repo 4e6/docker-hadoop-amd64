@@ -2,7 +2,6 @@ FROM debian:sid
 MAINTAINER Dmitry Bushev @4e6
 
 # setup
-RUN echo 'deb http://ftp.us.debian.org/debian/ sid main' > /etc/apt/sources.list
 RUN apt-get -q update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install build-essential maven cmake zlib1g-dev libssl-dev pkg-config openjdk-7-jre-headless openjdk-7-jdk curl
 
