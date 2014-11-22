@@ -1,4 +1,4 @@
-FROM debian:sid
+FROM debian:wheezy
 MAINTAINER Dmitry Bushev @4e6
 
 # setup
