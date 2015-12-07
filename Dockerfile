@@ -7,10 +7,10 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install build-essential maven cmak
 
 # build
 RUN curl -Lk https://protobuf.googlecode.com/svn/rc/protobuf-2.5.0.tar.gz | tar -xz -C /opt
-RUN curl -Lk http://www.eu.apache.org/dist/hadoop/common/hadoop-2.7.0/hadoop-2.7.0-src.tar.gz | tar -xz -C /opt
+RUN curl -Lk http://www.eu.apache.org/dist/hadoop/common/hadoop-2.7.1/hadoop-2.7.1-src.tar.gz | tar -xz -C /opt
 
 ENV PROTOBUF_SOURCES /opt/protobuf-2.5.0
-ENV HADOOP_SOURCES /opt/hadoop-2.7.0-src
+ENV HADOOP_SOURCES /opt/hadoop-2.7.1-src
 
 ADD build.bash /opt/
 RUN /opt/build.bash

@@ -5,5 +5,5 @@ Hadoop is shipped with native libraries built under `x86`. This image builds Had
 
 ## Get package
 
-    docker run -ti --name hadoop-amd64 dbushev/hadoop-amd64:2.7.0 echo
-    docker cp hadoop-amd64:/opt/hadoop-2.7.0.tar.gz /destination/path
+    docker run -ti --name hadoop-amd64 dbushev/hadoop-amd64:2.7.1 echo
+    docker cp hadoop-amd64:/opt/hadoop-2.7.1.tar.gz /destination/path
