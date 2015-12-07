@@ -8,7 +8,7 @@ cd "$PROTOBUF_SOURCES" && ./configure && make
 # build hadoop
 export HADOOP_PROTOC_PATH=$PROTOBUF_SOURCES/src/protoc
 cd "$HADOOP_SOURCES" && mvn package -Pdist,native -DskipTests -Dtar
-mv "$HADOOP_SOURCES"/hadoop-dist/target/hadoop-2.6.0.tar.gz /opt/
+mv "$HADOOP_SOURCES"/hadoop-dist/target/hadoop-2.6.2.tar.gz /opt/
 
 # cleanup
 cd "$PROTOBUF_SOURCES" && make clean
